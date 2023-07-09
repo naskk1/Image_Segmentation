@@ -1,2 +1,6 @@
-# Image_Segmentation
-image_segmentation_by_python
+任务流程
+图形化交互界面GUI编程 GUI.py
+添加像素聚类算法和原理（看是否要实现） 
+添加评价模块
+添加图像识别功能
+写报告
