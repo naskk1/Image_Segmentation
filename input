@@ -1,0 +1,22 @@
+import cv2
+#输入
+
+path_picture="D:\\task\\1.png"
+img = cv2.imread(path_picture,cv2.IMREAD_GRAYSCALE)
+cv2.namedWindow("Input")
+cv2.imshow("Input", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+cv2.imwrite("D:\\task\\2.png",img)
+'''
+#读取像素值
+path_picture="D:\\task\\1.png"
+img = cv2.imread(path_picture,cv2.IMREAD_COLOR)
+print(type(img))
+#cv2.imshow("original",img)
+img[10:90,30:120]=[255,0,0]
+#cv2.imshow("Input", img)
+cv2.waitKey(0)
+blue=img[100,50,0]
+print(blue)
+'''
