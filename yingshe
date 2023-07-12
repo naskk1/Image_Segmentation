@@ -1,0 +1,17 @@
+import numpy as np
+import xiangsu
+import math
+
+gery = xiangsu.dst_gery
+var = np.var(gery)
+print(var)
+# 求所有灰度值的方差
+
+def ask_weight(F1, F2, var=var):
+    cha = F1-F2
+    k = cha**2
+    k = k/var
+    weight=math.exp(-k)
+    return weight
+# 这个是根据灰度来求图的权值
+
